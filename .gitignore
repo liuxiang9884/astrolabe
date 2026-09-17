@@ -19,8 +19,43 @@ vcpkg_installed/
 *.con
 *.log
 *.txt.lock
-*.pyc
-__pycache__/
-venv
 third_party/
 data/benchmark/*.bin
+
+# Python 字节码与编译扩展
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# Python 虚拟环境与本地包目录
+.venv/
+venv/
+env/
+.env/
+__pypackages__/
+
+# Python 打包产物（build* 已在上方忽略）
+dist/
+*.egg-info/
+*.egg
+.eggs/
+pip-wheel-metadata/
+
+# 测试、类型检查、lint 与覆盖率产物
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+.hypothesis/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Jupyter 自动保存的 checkpoint
+.ipynb_checkpoints/
